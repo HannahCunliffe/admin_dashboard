@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pageContainer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: red;
+    grid-row: 1 / 3;
+}
+
+.header {
+    background-color: yellow;
+}
+
+.mainContent {
+    background-color: pink;
+    
+}
