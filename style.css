@@ -62,7 +62,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(2, 1fr);
-    padding: 25px 50px;
+    padding: 0px 50px 20px;
 }
 
 .user {
@@ -79,7 +79,8 @@
 
 .search {
     display: flex;
-    gap: 15px;
+    gap: 18px;
+    align-items: center;
 }
 
 .search svg {
@@ -93,11 +94,7 @@
     border: none;
     background-color: #e2e8f0;
     border-radius: 10px;
-    padding: 15px 0px;
-}
-
-.user {
-    display: flex;
+    padding: 15px 0px 15px 8px;
 }
 
 .pageGreeting {
@@ -112,7 +109,7 @@
 }
 
 .greeting {
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .greeting p:first-child{
@@ -122,7 +119,45 @@
 
 .greeting p:last-child {
     font-size: 20px;
-    font-weight: 800;
+}
+
+.user  {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.user svg {
+    height: 25px;
+    width: auto;
+}
+
+.user p {
+    font-weight: 700;
+}
+
+.userIcon {
+    height: 45px;
+    width: auto;
+}
+
+.uploadControls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.uploadControls button {
+    padding: 12px 35px;
+    color: white;
+    background-color: #1992d4;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .mainContent {
