@@ -58,6 +58,22 @@
 
 .header {
     background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 25px 50px;
+}
+
+.user {
+    grid-column: 2 / 3;
+}
+
+.postSection {
+    grid-column: 1 / 2;
+}
+
+.uploadControls {
+    grid-column: 2 / 3;
 }
 
 .mainContent {
