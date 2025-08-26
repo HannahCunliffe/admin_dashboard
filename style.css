@@ -12,7 +12,7 @@
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr 7fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
 }
 
 .sidebar {
@@ -74,6 +74,54 @@
 
 .uploadControls {
     grid-column: 2 / 3;
+}
+
+.search {
+    display: flex;
+    gap: 15px;
+}
+
+.search svg {
+    height: 25px;
+    width: auto;
+}
+
+.search input {
+    width: max(90%,200px);
+    height: 25px;
+    border: none;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    padding: 15px 0px;
+}
+
+.user {
+    display: flex;
+}
+
+.pageGreeting {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.largeIcon {
+    height: 80px;
+    width: auto;
+}
+
+.greeting {
+    font-weight: 600;
+}
+
+.greeting p:first-child{
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.greeting p:last-child {
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .mainContent {
