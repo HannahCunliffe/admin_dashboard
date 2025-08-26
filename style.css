@@ -163,6 +163,49 @@
 .mainContent {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    column-gap: 25px;
+    padding: 40px 40px 40px 22px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 30px;
+}
+
+.project {
+    background-color: white;
+    border-left: 10px solid #e5ac27;
+    border-radius: 10px;
+    padding: 40px 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projectTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.projectControls {
+    align-self: flex-end;
+    display: flex;
+    gap: 20px
+}
+
+.project svg {
+    height: 25px;
+    width: auto;
+}
+
+.sectionHeader {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .header, .project, .posts, .trendingApps {
