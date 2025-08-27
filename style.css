@@ -208,6 +208,18 @@
     margin-bottom: 10px;
 }
 
-.header, .project, .posts, .trendingApps {
+.announcements {
+    background-color: white;
+}
+
+.trending {
+    background-color: white;
+}
+
+.header {
     box-shadow: 0px 10px 10px -9px #b8b8b8;
+}
+
+.project, .posts, .trendingApps {
+    box-shadow: 0px 5px 9px -2px #b8b8b8;
 }
