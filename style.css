@@ -194,13 +194,12 @@
 
 .description {
     color: rgb(87, 87, 87);
-    ;
 }
 
 .projectControls {
     align-self: flex-end;
     display: flex;
-    gap: 20px
+    gap: 20px;
 }
 
 .project svg {
@@ -214,16 +213,17 @@
     margin-bottom: 15px;
 }
 
-.community {
+.communityGrid {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content(0, 1fr);
+    row-gap: 30px;
 }
 
 .posts {
     background-color: white;
     border-radius: 10px;
-    padding: 20px 40px 20px 40px;
+    padding: 10px 50px 10px 50px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 }
@@ -231,7 +231,7 @@
 .post {
     border-bottom: 2px solid #d8d8d8;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 /* stops last post from having a bottom border */
