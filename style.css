@@ -89,7 +89,7 @@
 }
 
 .search input {
-    width: max(90%,200px);
+    width: max(90%, 200px);
     height: 25px;
     border: none;
     background-color: #e2e8f0;
@@ -112,7 +112,7 @@
     font-weight: 800;
 }
 
-.greeting p:first-child{
+.greeting p:first-child {
     font-size: 12px;
     margin-bottom: 4px;
 }
@@ -121,7 +121,7 @@
     font-size: 20px;
 }
 
-.user  {
+.user {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -139,7 +139,7 @@
 }
 
 .userIcon {
-    height: 45px;
+    height: 50px;
     width: auto;
 }
 
@@ -165,6 +165,7 @@
     grid-template-columns: 2fr 1fr;
     column-gap: 25px;
     padding: 40px 40px 40px 22px;
+    background-color: #e2e8f0;
 }
 
 .projects {
@@ -191,6 +192,11 @@
     margin-bottom: 5px;
 }
 
+.description {
+    color: rgb(87, 87, 87);
+    ;
+}
+
 .projectControls {
     align-self: flex-end;
     display: flex;
@@ -205,21 +211,76 @@
 .sectionHeader {
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-.announcements {
+.community {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 40px;
+}
+
+.posts {
     background-color: white;
+    border-radius: 10px;
+    padding: 20px 40px 20px 40px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.post {
+    border-bottom: 2px solid #d8d8d8;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* stops last post from having a bottom border */
+.posts div:last-child {
+    border-bottom: none;
+}
+
+.postTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.postText {
+    font-size: 15px;
+    color: rgb(87, 87, 87);
 }
 
 .trending {
     background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding: 30px 30px;
+    row-gap: 30px;
+}
+
+.app {
+    display: flex;
+    gap: 25px;
+}
+
+.username {
+    font-weight: 550;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.projectName {
+    color: rgb(87, 87, 87);
+    font-size: 17px;
 }
 
 .header {
     box-shadow: 0px 10px 10px -9px #b8b8b8;
 }
 
-.project, .posts, .trendingApps {
+.project,
+.posts,
+.trending {
     box-shadow: 0px 5px 9px -2px #b8b8b8;
 }
